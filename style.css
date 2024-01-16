@@ -1,0 +1,13 @@
+.box{
+    aspect-ratio: 1;
+    width: calc(100% / 10);
+    background-color: #7fffd4;
+    border: 1px solid black ;
+
+}
+
+#grid{
+    border: 1px solid black;
+    width: 80%;
+    background-color: #7fffd4;
+}
