@@ -10,5 +10,9 @@ const griglia= document.getElementById("grid")
 
 
 for(let i=0; i<100; i++){
-    create
+    let box = document.createElement("div")
+    box.classList.add ("box")
+    griglia.append(box)
+    box.innerHTML= [i+1]
 }
+

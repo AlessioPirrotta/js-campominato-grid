@@ -3,11 +3,14 @@
     width: calc(100% / 10);
     background-color: #7fffd4;
     border: 1px solid black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 #grid{
     border: 1px solid black;
-    width: 80%;
+    width: 60%;
     background-color: #7fffd4;
 }
