@@ -11,6 +11,18 @@
 
 #grid{
     border: 1px solid black;
-    width: 60%;
+    width: 40%;
     background-color: #7fffd4;
+}
+
+.active{
+    background-color: black;
+    color: white;
+    aspect-ratio: 1;
+    width: calc(100% / 10);
+    
+    border: 1px solid white ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

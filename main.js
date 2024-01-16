@@ -7,6 +7,7 @@
 // cella cliccata.
 
 const griglia= document.getElementById("grid")
+const Button= document.getElementById("btn")
 
 
 for(let i=0; i<100; i++){
@@ -14,5 +15,17 @@ for(let i=0; i<100; i++){
     box.classList.add ("box")
     griglia.append(box)
     box.innerHTML= [i+1]
+    box.addEventListener("click",function(){
+        this.classList.toggle("active")
+        console.log(this)
+    })
 }
+
+Button.addEventListener("click",function(){
+    griglia.classList.remove("d-none")
+})
+
+
+
+
 
