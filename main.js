@@ -12,6 +12,8 @@ const difficoltà = document.getElementById("sct");
 const difficoltaIniziale = difficoltà.value;
 
 
+
+
 button.addEventListener("click", function () {
     griglia.classList.remove("d-none");
 
@@ -35,10 +37,22 @@ function creaGriglia(difficolta) {
                 console.log(this);
             });
         }
-    } else if (difficolta === "hard") {
+    } else if (difficolta === "medium") {
         for (let i = 0; i < 81; i++) {
             let box = document.createElement("div");
             box.classList.add("box2");
+            griglia.append(box);
+            box.innerHTML = i + 1;
+            box.addEventListener("click", function () {
+                this.classList.toggle("active");
+                console.log(this);
+            });
+        }
+    }
+    else if (difficolta === "hard") {
+        for (let i = 0; i < 49; i++) {
+            let box = document.createElement("div");
+            box.classList.add("box3");
             griglia.append(box);
             box.innerHTML = i + 1;
             box.addEventListener("click", function () {

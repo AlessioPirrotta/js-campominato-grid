@@ -19,6 +19,17 @@
 
 }
 
+.box3{
+    aspect-ratio: 1;
+    width: calc(100% / 7);
+    background-color: #7fffd4;
+    border: 1px solid black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 #grid{
     border: 1px solid black;
     width: 40%;
